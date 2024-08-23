@@ -45,9 +45,11 @@ const userRoutes = require('./routes/user.route');
 const adminRoutes = require('./routes/admin.route')
 const employeeRegister = require('./routes/registerEmployee.route')
 const bookingRoutes = require('./routes/booking.route');
+const messageRoutes = require('./routes/message.route');
 
 app.use('/user', userRoutes)
 app.use('/admin', adminRoutes)
 app.use('/booking', bookingRoutes);
+app.use('/message', messageRoutes);
 //iska matlab k default route '/' k agy employeeRegister pr path define kro 
 app.use('/', employeeRegister)
