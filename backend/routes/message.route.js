@@ -1,9 +1,9 @@
 const express = require('express');
-const { createMessage, getMessages } = require('../controllers/message.controller');
+const { createMessage, getMessages } = require('../controller/message.controller');
 const router = express.Router();
 
 // Route to create a new message
-router.post('/messages', createMessage);
+router.post('/addmessage', createMessage);
 
 // Route to get all messages (admin only)
 router.get('/messages', getMessages);

@@ -52,4 +52,4 @@ app.use('/admin', adminRoutes)
 app.use('/booking', bookingRoutes);
 app.use('/message', messageRoutes);
 //iska matlab k default route '/' k agy employeeRegister pr path define kro 
-app.use('/', employeeRegister)
+app.use('/employee', employeeRegister)
